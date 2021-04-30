@@ -1,0 +1,3 @@
+                            # Aprendizados da semana
+                    
+    aprendi muito esta semana e me surpreendeu muito com muitas coisas aprendemos sobre git, github, paineis, interfaces graficas , alguns comandos que estao meio dificeis de lenbrar e assimilar mas nada que nao ** consiga ** com um * * tempo * e ** pratica ** gostei muito da metodologia de ensino de vcs  super ansioso para proxima semana 
