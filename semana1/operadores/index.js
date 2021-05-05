@@ -101,7 +101,21 @@ console.log('resultado b ', resultadoB)
 
 */
 
+const nome= "chijo"
+const nomeAlterado =nome.toLocaleLowerCase()
 
+console.log(nomeAlterado)
+
+const frase = "Hoje assisti Chaves, adoro Chaves !"
+const novaFrase = frase.replaceAll("Chaves", "Tarzan")
+
+console.log(novaFrase)
+
+const instrutoras = ["Amanda", " lais"]
+
+instrutoras.push("chijo")
+
+console.log(instrutoras)
 
 
 
