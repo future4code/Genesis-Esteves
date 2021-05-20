@@ -22,17 +22,21 @@
  *[A♠️, 2♠️, 3♠️, 4♠️, 5♠️, 6♠️, 7♠️, 8♠️, 9♠️, 10♠️, J♠️, Q♠️, K♠️]
 
   *[A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K] 
- * 
   //const mensagem;
-  //const retorno = confirm("Clique em um dos botões!");
- * 
+  //const retorno = confirm("Clique em um dos bot!");
+======
+
  */
 
 
 
 
 
-  console.log("Bem vindo ao jogo de Blackjack!") 
+ 
+ 
+ 
+  //const mensagem;
+  //cons/  /cons retorno = confirm("Clique em um d master
   
   
   
@@ -87,7 +91,6 @@
   const valor = carta.valor + carta1.valor
 
   console.log("Usuário - ","cartas",naipe + "","Valor", valor)
-
 
   const carta3= comprarCarta();
    
