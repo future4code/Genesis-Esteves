@@ -190,3 +190,16 @@ main .coluna section ul li strong{
     font-family: cursive;
 }
 
+button {
+    margin-top: 10px;
+    border-radius: 100px;
+    width: 130px;
+    background-color: #5ad6e6;
+    border-bottom: solid;
+    font-family: fantasy;
+}
+
+section {
+    background-color: #4dd0e1;
+}
+
