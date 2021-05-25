@@ -1,0 +1,102 @@
+/*
+Nome: labenumero 
+DEV:genesis Ferreira
+labenumero: 2136262
+Descriçao: 
+Version: 1.0
+
+--------------------------------------------
+ESTRUTURA BASE
+--------------------------------------------
+**** DECLARAÇÃO DE VARIAVEIS
+**** ESTILOS GERAIS
+**** da linha 23 / 32
+**** BODY
+**** da linha 23 / 32
+**** HEADER
+**** da linha 37 / 55
+**** MAIN
+**** FOOTER
+
+font-family: 'Squada One', cursive;
+
+*/
+
+/* ESTILOS GERAIS */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Squada One', cursive;
+}
+
+/* HEADER */
+
+header{
+    height: 100;
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    grid-column: 1/-1;
+}
+.logo{  
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.botao-de-pesquisa{
+    display: flex; 
+    align-items: center;
+    margin-right: 60px;
+      
+}
+
+/*MAIN*/
+
+.conteiner{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns:300px 1fr ;
+}
+
+main{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    margin: 30px 30px 30px 30px;
+    grid-column: 2/4;
+    grid-row: 2/3;
+
+
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    box-shadow: 3px 3px 7px darkgrey;    
+}
+
+.videos img{
+    width: 500px;
+}
+
+/* FOOTER */
+
+
+
+footer{
+    background-color: aqua;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+   
+
+}
