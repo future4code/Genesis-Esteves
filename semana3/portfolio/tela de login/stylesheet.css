@@ -1,0 +1,156 @@
+body{
+	background-image:url("./img/back2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+h2{
+	text-shadow: 1px 1px 5px black;
+	color: white;
+}
+
+.form{
+	width: 400px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.fnt{
+	font-family: sans-serif;
+	color: #169FE0;
+}
+
+.card{
+	box-shadow: 5px 5px 5px rgba(78, 65, 65,0.5);
+	background-color: rgba(255,255,255,0.1);
+	padding: 30px;
+	border-radius: 45px;
+	transition: all 2s ease;
+}
+
+.card:hover{
+	box-shadow: 20px 20px 5px rgb(78, 65, 65);
+	background-color: rgba(255,255,255,1);
+	padding: 30px;
+	border: 1,5px solid gray;
+	border-radius: 45px;
+
+}
+
+.card-top{
+	text-align: center;
+}
+
+.card-top > p {
+	color: darkblue;
+}
+
+.card-group > label{
+	width: 100%;
+	color: rgb(27, 64, 233);
+	display: block;
+}
+
+.card-group > input{
+	background-color: rgb(102, 149, 211);
+	width: 90%;
+	height: 10px;
+	border-radius: 30px;
+	padding: 15px;
+	border: 1px ridge #169FE0;
+	outline: 0;
+}
+
+.card-group > button{
+	background-image: linear-gradient(to right, #169FE0, rgb(29, 99, 248));
+	width: 100%;
+	border-radius: 30px;
+	padding: 15px;
+	color: aliceblue;
+	border: 0px;
+	outline: 0;
+
+}
+
+.btn button:hover{
+	background-image: linear-gradient(to right, rgb(29, 99, 248), #169FE0);
+}
+
+.imglogin{
+	border-radius: 400px;
+	width: 150px;
+	transition: all 2s ease;
+}
+.imglogin:hover{
+	border-radius: 400px;
+	width: 150px;
+	box-shadow: 5px 5px 5px  gray;
+	transition: all 2s ease;
+}
+
+
+
+a:link{
+	color: #00009C;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+a:visited{
+	color: rgb(92, 12, 72);
+}
+
+a:hover{
+	text-decoration: underline;
+	background-color: #CCC;
+}
+
+a:active{
+	background-color: #FFFF00;
+}
+
+.title{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fcfdfd;
+}
+
+p{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #169FE0;
+}
+
+p {
+    font-size: 30px;
+}
+
+label {
+	font-size: 23px;
+	font-family: Arial, Helvetica, sans-serif;
+    color: #169FE0;	
+}
+
+label{
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;	
+ }
+
+ select {
+    border-radius: 100px;
+    width: 190px;
+    height: 30px;
+}
+select option {
+    font-size: 25px;
+}
+select {
+    text-align-last: center;
+    background: padding-box;
+    border-bottom-width: thick;
+    font: message-box;
+    margin: 10px 75px;
+}
