@@ -1,0 +1,81 @@
+/*
+Nome: videos 1
+DEV:genesis Ferreira
+labenumero: 2136262
+Descriçao: 
+Version: 1.0
+
+--------------------------------------------
+ESTRUTURA BASE
+--------------------------------------------
+**** DECLARAÇÃO DE VARIAVEIS
+**** ESTILOS GERAIS
+**** BODY
+**** HEADER
+**** MAIN
+**** FOOTER
+
+font-family: 'Squada One', cursive;
+
+*/
+
+/* ESTILOS GERAIS */
+
+/*HEADER*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+header{
+    height: 100;
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    grid-column: 1/-1;
+}
+.logo{  
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.botao-de-pesquisa{
+    display: flex; 
+    align-items: center;
+    margin-right: 60px;
+      
+}
+
+
+/*MAIN*/
+
+.video{
+    display: flex;
+    margin-bottom: 30PX;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: aqua;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;  
+    height: 50px;
+
+}
+
+
