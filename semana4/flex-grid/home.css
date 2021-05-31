@@ -1,0 +1,66 @@
+/*
+Nome: site texte doceria 
+DEV:genesis Ferreira
+labenumero: 2136262
+Descriçao: 
+Version: 1.0
+--------------------------------------------
+ESTRUTURA BASE
+--------------------------------------------
+**** DECLARAÇÃO DE VARIAVEIS
+**** ESTILOS GERAIS
+**** BODY
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+font-family: 'Open Sans', sans-serif;
+*/
+
+/* ESTILOS GERAIS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+ .container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100% 1fr 100%px;
+    grid-template-rows: 70px 1fr 40px;
+  }
+
+/*HEADER*/
+header {
+    background-color: mediumvioletred;
+   display: grid;
+   grid-template-rows: 70px 1fr 70px;
+   grid-template-columns: 1fr 1fr 1fr;
+  }
+/*MAIN*/
+
+main{
+    display: flex;
+
+}
+
+.nav{
+    display: flex;
+
+    background-color: #f2d0e0;
+    flex-direction: column;
+    width: 400px;
+    
+}
+/*FOOTER*/
+
+
+footer{
+    background-color: mediumvioletred;
+    display: grid;
+}
+/**/
+/**/
