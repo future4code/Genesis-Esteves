@@ -83,7 +83,7 @@ export default class CreatePlaylist extends React.Component {
         } else {
             const url = 'https://us-central1-labenu-apis.cloudfunctions.net/labefy/'
             const params = 'playlists'
-            const headers = { headers: { Authorization: 'danilo-chagas-molina' } }
+            const headers = { headers: { Authorization: 'genesis-esteves-molina' } }
             const body = { 'name': this.state.value }
 
             try {
@@ -94,7 +94,7 @@ export default class CreatePlaylist extends React.Component {
                 })
                 this.props.refreshList()
             } catch (error) {
-                alert(`Erro ao criar playlist.\nVerifique se já existe uma playlist com o mesmo nome\n${error}`)
+                alert(`Erro para criar sua playlist.\nVerifique se já existe uma playlist com o mesmo nome\n${error}`)
             }
         }
 
@@ -113,7 +113,7 @@ export default class CreatePlaylist extends React.Component {
             >
                 <h1>Criando Playlist!</h1>
 
-                <p>você poderá criar uma ou mais playlists e depois fechar assim que terminar</p>
+                <p> Crie sua  playlists e depois clique em salvar</p>
                 <input
                     placeholder={"Insira o nome da sua playlist"}
                     value={this.state.value}

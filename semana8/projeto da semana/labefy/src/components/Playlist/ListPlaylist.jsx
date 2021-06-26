@@ -164,7 +164,7 @@ export default class Playlist extends React.Component {
     getAllPlaylists = async () => {
         const url = 'https://us-central1-labenu-apis.cloudfunctions.net/labefy/'
         const params = 'playlists'
-        const headers = { headers: { Authorization: 'danilo-chagas-molina' } }
+        const headers = { headers: { Authorization: 'genesis-esteves-molina' } }
 
         try {
             const response = await axios.get(url + params, headers)
@@ -185,7 +185,7 @@ export default class Playlist extends React.Component {
         if (confirmarExclusao) {
             const url = 'https://us-central1-labenu-apis.cloudfunctions.net/labefy/'
             const params = 'playlists/' + id
-            const headers = { headers: { Authorization: 'danilo-chagas-molina' } }
+            const headers = { headers: { Authorization: 'genesis-esteves-molina' } }
 
             try {
                 await axios.delete(url + params, headers)
@@ -246,17 +246,17 @@ export default class Playlist extends React.Component {
                 </CardPlaylist>
             })
             :
-            <p> você não tem playlist cadastrada</p>
+            <p> Nenhuma play list Encontrada</p>
 
 
         const trackQty = this.state.quantity > 0 &&
         this.state.quantity===1 ?
-        <InfoTrackQty>você tem 1 playlist</InfoTrackQty> :
-        <InfoTrackQty>você tem {this.state.quantity} playlists</InfoTrackQty>
+        <InfoTrackQty> Contem 1 playlist</InfoTrackQty> :
+        <InfoTrackQty> Contem {this.state.quantity} playlists</InfoTrackQty>
 
         return (
             <ContainerMain>
-                <h1>Playlists</h1>
+                <h1>Suas Playlists</h1>
 
                     {trackQty}
 
@@ -265,7 +265,7 @@ export default class Playlist extends React.Component {
                         <Card
                             onClick={this.onClickCreatePlaylistCard}
                         >
-                            <h3>+<br />criar<br />playlist</h3>
+                            <h3>Adicionar + </h3>
                         </Card>
                         <CreatePlaylist
                             refreshList={() => this.componentDidMount()}

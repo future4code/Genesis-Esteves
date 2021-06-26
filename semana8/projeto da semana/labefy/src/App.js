@@ -2,12 +2,12 @@
   import styled from 'styled-components'
   import ListPlaylist from './components/Playlist/ListPlaylist'
   import PlayTrack from "./components/Musica/PlayTrack"
-  //import bg from "./media/bglabefy.jpg"
+  import bg from "./media/bglabefy.jpg.jpg"
 
 
   const Container = styled.div`
   height: 100vh;
- background-color: rgba(150,150,150,.8);
+  background-color: rgba(150,150,150,.8);
   button{
   position: relative;
   z-index: 2;
@@ -40,7 +40,11 @@ const Logo = styled.div`
   position: absolute;
   top: 0;
   z-index: 1;
-  
+  min-width: 100%;
+  height: 100%;
+  background-image: url(${bg});
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: blue;
   @media (max-device-width:414px) {
     align-items: center;
@@ -87,7 +91,7 @@ const Logo = styled.div`
     render() {
   
       const activePage = this.state.page === 'home' ?
-      <Logo><h1>Labefy</h1></Logo> 
+      <Logo></Logo> 
       :
       <ListPlaylist
         catchTrackInfo={this.trackInfo}

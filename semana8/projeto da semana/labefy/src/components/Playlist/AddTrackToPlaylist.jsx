@@ -101,7 +101,7 @@ export default class AddTrackToPlaylist extends React.Component {
             this.state.trackToAdd.url) {
             const url = 'https://us-central1-labenu-apis.cloudfunctions.net/labefy/'
             const params = 'playlists/'+playlistId+'/tracks?playlistId='+playlistId
-            const headers = { headers: { Authorization: 'danilo-chagas-molina' } }
+            const headers = { headers: { Authorization: 'genesis-esteves-molina' } }
             const body = trackToAdd
         
             try{
@@ -137,8 +137,7 @@ export default class AddTrackToPlaylist extends React.Component {
             >
                 
                 <h1>Adicionando Música!</h1>
-                <p>você poderá adicionar uma ou mais 
-                    músicas e depois fechar assim que terminar</p>
+                <p>Adicione uma ou mais musicas e apos feche </p>
 
                 <input
                     id={"name"}

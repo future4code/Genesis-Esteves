@@ -153,7 +153,7 @@ export default class DetailPlaylist extends React.Component {
         if (this.props.playlistDetail.id) {
             const url = 'https://us-central1-labenu-apis.cloudfunctions.net/labefy/'
             const params = 'playlists/' + this.props.playlistDetail.id + '/tracks?' + this.props.playlistDetail.id
-            const headers = { headers: { Authorization: 'danilo-chagas-molina' } }
+            const headers = { headers: { Authorization: 'genesis-esteves-molina' } }
 
             try {
                 const response = await axios.get(url + params, headers)
@@ -172,7 +172,7 @@ export default class DetailPlaylist extends React.Component {
         if (confirmarExclusao) {
             const url = 'https://us-central1-labenu-apis.cloudfunctions.net/labefy/'
             const params = 'playlists/' + playlistId + '/tracks/' + trackId
-            const headers = { headers: { Authorization: 'danilo-chagas-molina' } }
+            const headers = { headers: { Authorization: 'genesis-esteves-molina' } }
 
             try {
                 await axios.delete(url + params, headers)
