@@ -1,7 +1,8 @@
 import React from "react"
+import {Container} from './style'
 
-export function Footer () {
-  return <div>
-      <h1>Footer</h1>
-  </div>
+function Footer () {
+    return <Container><h1>Footer</h1></Container>
 }
+
+export default Footer

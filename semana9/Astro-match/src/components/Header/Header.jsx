@@ -1,7 +1,12 @@
 import React from "react"
+import {Container} from './style'
 
-export function Header () {
-  return <div>
-      <h1>Header</h1>
-  </div>
+function Header () {
+    return (
+        <Container>
+            <h1>Header</h1>
+        </Container>
+    )
 }
+
+export default Header
