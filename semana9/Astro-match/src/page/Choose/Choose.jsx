@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from 'react'
-import { Container } from './style'
+import { Container, CardProfile } from './style'
 import { getProfileToChoose, postChoosePerson, putClear } from '../../components/Endpoints/Endpoints'
+import { BiHeartCircle, GiPlayerNext, BiBookHeart, FiRefreshCw, RiArrowGoBackFill } from 'react-icons/all'
+
 
 const Choose = (props) => {
     const [profile, setProfile] = useState({})
+    const [discartedProfile, setDiscartedProfile] = useState("")
 
     const getProfile = async () => {
         try {
             const response = await getProfileToChoose()
-            setProfile(response)
+            !!response ? setProfile(response) : setProfile("") 
 
         } catch (error) {
-            alert(error)
+            setProfile({})
         }
     }
 
@@ -29,49 +32,73 @@ const Choose = (props) => {
     }, [])
 
     const onClickRefresh = () => {
-        putClear().then(getProfile())
-        
-        
+        putClear().then(getProfile()).then(setDiscartedProfile(""))
+    }
+
+    const pushOnDiscartedProfile = () => {
+        setDiscartedProfile(profile)
+    }
+
+    const onClickBackDiscarded = () => {
+        if (!!discartedProfile) {
+            if (discartedProfile === profile) {
+                alert("Você pode voltar até um perfil.")
+            } else {
+                setProfile(discartedProfile)
+            }
+        } else {
+            alert("Sem perfil para voltar")
+        }
     }
 
     return (
         <Container>
-            <h1>Choose</h1>
-            <button
-                onClick={() => onClickRefresh()}>
-                Refresh
-            </button>
-            <button
-                onClick={props.switchPage}>
-                matches
-            </button>
-            <br />
-            {profile && <button
-                onClick={()=>getProfile()}>
-                Passa
-            </button>}
-            <br />
-            {profile && <button
-                onClick={() => chooseProfile(profile.id)}>
-                Curtir
-            </button>}
-            <br />
-            {profile ?
-                <>
-                    {profile.id}<br />
-                    {profile.name}<br />
-                    {profile.age}<br />
-                    {profile.bio}<br />
-                    <img alt={"imagen perfil"} src={profile.photo}></img>
-                </>
-                :
-                <>
-                    <h1>A lista acabou =/<br />aperte refresh para uma recomeçar</h1>
+            <CardProfile img={profile.photo}>
+                <div id={"container-bg"}></div>
+                <div id={"container-content"}>
+                    <div className={"container-top-buttons"}>
+                        <button id={"button-refresh"}
+                            onClick={() => onClickRefresh()}>
+                            <FiRefreshCw />
+                        </button>
 
-                </>
-            }
+                        <button id={"button-matches"}
+                            onClick={props.switchPage}>
+                            <BiBookHeart />
+                        </button>
+                    </div>
 
-        </Container>
+                    {profile ?
+                        <>
+                            <div className={"container-profile-img"} />
+                            <div className={"container-card-botton"}>
+                                <div className={"container-profile-detail"}>
+                                    <h4>{profile.name} | {profile.age}</h4>
+                                    <p lang={"pt-br"}>{profile.bio}</p>
+                                    <div className={"container-botton-buttons"}>
+                                        {profile &&
+                                            <button id={"button-discard"}
+                                                onClick={() => onClickBackDiscarded()}>
+                                                <RiArrowGoBackFill />voltar</button>}
+                                        {profile &&
+                                            <button id={"button-discard"}
+                                                onClick={() => { pushOnDiscartedProfile(); getProfile() }}>
+                                                <GiPlayerNext />passar</button>}
+                                    </div>
+                                </div>
+                                {profile && <BiHeartCircle
+                                    id={"button-like"}
+                                    onClick={() => chooseProfile(profile.id)} />}
+                            </div>
+                        </>
+                        :
+                        <div id={"container-empty"}>
+                            <h1>A lista acabou =/<br />aperte 'reiniciar'<br/> para recomeçar<br />ou confira seus matches</h1>
+                        </div>
+                    }
+                </div>
+            </CardProfile >
+        </Container >
     )
 }
 
