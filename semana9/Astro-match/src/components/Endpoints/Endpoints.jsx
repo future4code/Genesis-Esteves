@@ -2,7 +2,7 @@ import axios from "axios"
 
 export const BASE_URL = "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/"
 
-export const PARAMS_ALUNO = "danilo/"
+export const PARAMS_ALUNO = "genesis/"
 
 export const PARAMS_ACTION = ['person', 'matches', 'choose-person', 'clear']
 
