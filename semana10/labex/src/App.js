@@ -4,16 +4,16 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import ApplicationPage from "./pages/ApplicationPage";
-import CreateTripPage from "./pages/CreateTripPage";
-import TripDetailPage from "./pages/TripDetailPage";
-import TripsListPage from "./pages/TripsListPage";
-import LoginPage from "./pages/LoginPage";
+import HomePage from "../pages/HomePage";
+import ApplicationPage from "../pages/ApplicationPage";
+import CreateTripPage from "../pages/CreateTripPage";
+import TripDetailPage from "../pages/TripDetailPage";
+import TripsListPage from "../pages/TripsListPage";
+import LoginPage from "../pages/LoginPage";
 import styled from "styled-components";
 import { CssBaseline } from "@material-ui/core";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
-import DateFnsUtils from '@date-io/date-fns';
+//import DateFnsUtils from '@date-io/date-fns';
 
 const AppContainer = styled.div`
   display: flex;
