@@ -1,5 +1,5 @@
 {
-  "name": "para-treinar",
+  "name": "astro-match",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,11 +9,12 @@
     "autoprefixer": "^9.8.0",
     "axios": "^0.21.1",
     "colorette": "^1.2.0",
+    "components": "^0.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
     "react-scripts": "^3.4.1",
     "styled-components": "^5.3.0",
-    "surge": "^0.23.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
